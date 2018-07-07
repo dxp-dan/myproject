@@ -1,10 +1,12 @@
 <template>
     <div class="row">
         <Promotion></Promotion>
+        <NewPro></NewPro>
     </div>
 </template>
 <script>
     import Promotion from "@/components/product_list/Promotion.vue";
+    import NewPro from "@/components/product_list/NewPro.vue";
     export default{
         name:"Navbar",
         data(){
@@ -12,13 +14,14 @@
         },
         methods:{},
         components:{
-            Promotion   
+            Promotion,
+            NewPro 
         }
     }
 </script>
 <style scoped>
     .row{
-        margin-top:30px;
+        height:435px;
     }
 </style>
 
